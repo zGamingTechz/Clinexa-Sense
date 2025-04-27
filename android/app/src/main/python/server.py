@@ -4,7 +4,7 @@ app = Flask(__name__)
 @app.route('/chat', methods=['POST'])
 def chat():
     user_message = request.json['message']
-    # Do AI prediction
+    # AI prediction
     return {"response": "Predicted response"}
 
 if __name__ == '__main__':
